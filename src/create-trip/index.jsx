@@ -10,8 +10,18 @@ function CreateTrip() {
      <div className='mt-20'>
         <div>
           <h2 className='text-xl my-3 font-medium'>What is destination of choice?</h2>
-          <GooglePlacesAutocomplete apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY }/>
+          <GooglePlacesAutocomplete 
+          apiKey={import.meta.env.VITE_GOOGLE_PLACE_API_KEY }
+          selectProps={{
+            place,
+            onchange:(v)=>{setPlace(v);console.log(v)}
+          }}
+          />
         </div>
+     </div>
+     <div>
+     <h2 className='text-xl my-3 font-medium'>How many days are you planning your trip</h2>
+     <Input placeholder={'Ex.3'} type="number" />
      </div>
     
     </div>
