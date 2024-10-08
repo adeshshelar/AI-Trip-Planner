@@ -132,7 +132,7 @@ navigate('/view-trip/'+docId)
   
   return (
     <>
-      <div className="mt-10">
+      <div className="mt-10 mx-10">
         <div className="sm:px-10 md:px-32 lg:px-56 xl:px-10 p-5 ">
           <h2 className="font-bold text-3xl text-[#f56551]">
             Tell us your travel preferences 🏕️🌴
